@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212426"
+    tools:context=".activities.SearchActivity">
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:drawableStart="@drawable/search"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:drawablePadding="5dp"
+        android:hint="Enter users gmail..."
+        android:background="@drawable/search_user_bg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/search_view"
+        android:id="@+id/listView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
